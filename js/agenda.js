@@ -1,6 +1,6 @@
 let continuar = true;
 
-const menu = "1. Agendar\n2. Servicios\n3. Ver Carrito\nPresiona Escape para salir";
+const menu = "MENU: Selecciona y Agenda los servicios deseados\n\n1. Agendar\n2. Servicios\n3. Ver Carrito\nPresiona Escape para salir";
 const horarios = "1. Mañana\n2. Tarde\n3. Noche";
 const profesionales = "1. amparo\n2. marcos\n3. roxana\n4. pamela";
 const servicios = "1. alisado\n2. cortes & peinados\n3. pestañas & cejas\n4. manos & pies\n5. depilacion";
