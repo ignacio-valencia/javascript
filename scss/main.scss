@@ -1,0 +1,22 @@
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+
+
+
+// CSS general
+body {
+    @include center-div;
+    height: 100vh;
+    margin: 0;
+    font-family: $font-family;
+    background-color: $body-bg-color;
+    color: $text-color;
+
+    .div-centered {
+        background-color: $div-background-color;
+        text-align: center;
+        padding: $div-padding;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}
