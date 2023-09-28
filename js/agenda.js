@@ -1,9 +1,9 @@
 let continuar = true;
 
 const menu = "MENU: Selecciona y Agenda los servicios deseados\n\n1. Agendar\n2. Servicios\n3. Ver Carrito\nPresiona Escape para salir";
-const horarios = "1. Mañana\n2. Tarde\n3. Noche";
-const profesionales = "1. amparo\n2. marcos\n3. roxana\n4. pamela";
-const servicios = "1. alisado\n2. cortes & peinados\n3. pestañas & cejas\n4. manos & pies\n5. depilacion";
+const horarios = "MENU: Selecciona Horario:\n\n1. Mañana\n2. Tarde\n3. Noche";
+const profesionales = "MENU: Selecciona Profesional\n\n1. amparo\n2. marcos\n3. roxana\n4. pamela";
+const servicios = "MENU: Selecciona Servicio\n\n1. alisado\n2. cortes & peinados\n3. pestañas & cejas\n4. manos & pies\n5. depilacion";
 
 let scheduleSelect = null;
 let staffSelect = null;
@@ -163,14 +163,14 @@ function servicesMenu() {
 
 function shoppingCart() {
 
-    const evaluateValue = (value) => value === null ? "no seleccionado!" : value;
+    const evaluateValue = (value) => value === null ? 0 : value;
 
-    scheduleSelect = evaluateValue(scheduleSelect);
+    scheduleSelect = evaluateValue(scheduleSelect,);
     staffSelect = evaluateValue(staffSelect);
     servicesSelect = evaluateValue(servicesSelect);
     invoice = evaluateValue(invoice);
 
-    alert("Usted a seleccionado: \n profesional: " + staffSelect + "\n horario: " + scheduleSelect + "\n valor: " + invoice)
+    alert("Resumen seleccion: \n profesional: " + staffSelect + "\n horario: " + scheduleSelect + "\n valor: " + invoice)
 }
 
 while (continuar) {
