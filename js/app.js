@@ -2,7 +2,7 @@ import * as Menu from "./menu.js";
 import * as Services from "./services.js";
 import * as Staff from "./staff.js";
 import * as Schedule from "./schedule.js"
-import { formatCurrency } from './utils.js';
+import { formatCurrency,properName } from './utils.js';
 
 let continuar = true;
 
@@ -93,7 +93,7 @@ do {
                 staffOption = mostrarMenu(Staff.menu);
             } while (!validateOption(staffOption, Staff.staff) && continuar);
             const selectedStaff = Staff.getStaffByOption(staffOption);
-            alert(`Has seleccionado el profesional:\n${selectedStaff.name} ${selectedStaff.lastname}`);
+            alert(`Has seleccionado el profesional:\n${properName(selectedStaff.name)} ${properName(selectedStaff.lastname)}`);
             break;
         case '5':
             console.log('Salir')
